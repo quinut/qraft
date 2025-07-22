@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head"
+        },
+        "title": {
+            "text": "머리!"
+        },
+        "description": {
+            "text": "플레이어 머리를 처음으로 얻었습니다."
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "tracker:root",
+    "criteria": {
+        "got_player_head": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:player_head"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
